@@ -7508,7 +7508,7 @@ components:
               properties:
                 operation_type:
                   type: string
-                  description: The type of authentication event that the trigger listens for.
+                  description: The authentication event that the trigger listens for.
                   enum:
                     - LOGIN
                     - CREATE
