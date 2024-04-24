@@ -1,0 +1,95 @@
+.. _edge-server-telemetry:
+
+=====================
+Edge Server Telemetry
+=====================
+
+.. meta::
+   :description: Learn about the telemetry that Edge Server instances report to Atlas.
+
+.. facet::
+   :name: genre 
+   :values: reference
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+MongoDB collects telemetry data from Edge Server instances. In some cases, 
+connected clients independently collect telemetry data. 
+
+This data is used for diagnostic, troubleshooting, and feature development 
+purposes.
+
+Edge Server Data Collection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The telemetry that an Edge Server instance reports includes:
+
+- Information about the hardware
+- Information about data transfer
+
+Hardware Telemetry
+``````````````````
+
+Edge Server instances report the following information about the hardware 
+running the Edge Server code:
+
+- CPU use as a percentage
+- Memory use as a percentage
+
+Data Transfer Telemetry
+```````````````````````
+
+Edge Server instances report the following information about data transfer:
+
+- Regular pings with a health status
+- Number of sync sessions
+
+Connected Client Data Collection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Edge Server instances report some information about connected clients.
+
+MongoDB Wire Protocol Connections
+`````````````````````````````````
+
+Edge Server instances report the following information about MongoDB Drivers
+and Tools that connect using the Wire Protocol:
+
+- Number of sessions
+- Compute time
+
+Additionally, Drivers and tools may have their own telemetry.
+
+Atlas Device SDK Connections
+````````````````````````````
+
+Edge Server instances report the following information about MongoDB Drivers
+and Tools that connect using Atlas Device SDK:
+
+- Number of connections
+- Number of sessions
+
+Atlas Device SDK collects anonymized telemetry under some circumstances.
+For information about this telemetry, including how to disable it, refer
+to the telemetry page for the SDK you use:
+
+- :ref:`telemetry-cpp`
+- :ref:`telemetry-dotnet`
+- :ref:`telemetry-flutter`
+- :ref:`telemetry-java`
+- :ref:`telemetry-kotlin`
+- :ref:`telemetry-node`
+- :ref:`telemetry-react-native`
+- :ref:`telemetry-swift`
+- :ref:`telemetry-web`
+
+Not Tracked
+```````````
+
+An Edge Server instance does not track:
+
+- IP addresses of connected clients
